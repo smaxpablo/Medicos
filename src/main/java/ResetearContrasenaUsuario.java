@@ -2,11 +2,6 @@
 import java.util.HashMap;
 import java.util.Map;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 /**
  * The type Resetear contrasena usuario.
  *
@@ -28,7 +23,8 @@ public class ResetearContrasenaUsuario {
      * @param usuario    the usuario
      * @param contrasena the contrasena
      */
-    public void agregarUsuarioContrasena(String usuario, String contrasena) {
+    public void agregarUsuarioContrasena(final String usuario,
+                                         final String contrasena) {
         usuariosContrasenas.put(usuario, contrasena);
     }
 
@@ -39,7 +35,8 @@ public class ResetearContrasenaUsuario {
      * @param nuevaContrasena the nueva contrasena
      * @return the boolean
      */
-    public boolean resetearContrasena(String usuario, String nuevaContrasena) {
+    public boolean resetearContrasena(final String usuario,
+                                      final String nuevaContrasena) {
         if (usuariosContrasenas.containsKey(usuario)) {
             usuariosContrasenas.put(usuario, nuevaContrasena);
             return true;

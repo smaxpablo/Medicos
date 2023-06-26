@@ -2,10 +2,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
  * The type Asignar tareas alta prioridad.
@@ -27,7 +23,7 @@ public class AsignarTareasAltaPrioridad {
      *
      * @param tarea the tarea
      */
-    public void agregarTarea(Tarea tarea) {
+    public void agregarTarea(final Tarea tarea) {
         tareas.add(tarea);
     }
 

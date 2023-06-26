@@ -2,10 +2,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
  * The type Buscar medicos tareas alta prioridad.
@@ -20,7 +16,7 @@ public class BuscarMedicosTareasAltaPrioridad {
      *
      * @param medicos the medicos
      */
-    public BuscarMedicosTareasAltaPrioridad(List<Medico> medicos) {
+    public BuscarMedicosTareasAltaPrioridad(final List<Medico> medicos) {
         this.medicos = medicos;
     }
 

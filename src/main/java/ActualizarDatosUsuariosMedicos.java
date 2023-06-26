@@ -2,10 +2,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
  * The type Actualizar datos usuarios medicos.
@@ -27,7 +23,7 @@ public class ActualizarDatosUsuariosMedicos {
      *
      * @param medico the medico
      */
-    public void agregarMedico(Medico medico) {
+    public void agregarMedico(final Medico medico) {
         usuariosMedicos.add(medico);
     }
 
@@ -38,7 +34,8 @@ public class ActualizarDatosUsuariosMedicos {
      * @param nuevaEspecialidad the nueva especialidad
      * @return the boolean
      */
-    public boolean actualizarDatosMedico(String nombre, String nuevaEspecialidad) {
+    public boolean actualizarDatosMedico(final String nombre,
+                                         final String nuevaEspecialidad) {
         for (Medico medico : usuariosMedicos) {
             if (medico.getNombre().equals(nombre)) {
                 medico.setEspecialidad(nuevaEspecialidad);

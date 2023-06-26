@@ -2,10 +2,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
  * The type Creacion roles.
@@ -27,7 +23,7 @@ public class CreacionRoles {
      *
      * @param rol the rol
      */
-    public void agregarRol(String rol) {
+    public void agregarRol(final String rol) {
         roles.add(rol);
     }
 

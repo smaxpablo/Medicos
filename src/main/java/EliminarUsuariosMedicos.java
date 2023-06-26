@@ -3,11 +3,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 /**
  * The type Eliminar usuarios medicos.
  *
@@ -28,7 +23,7 @@ public class EliminarUsuariosMedicos {
      *
      * @param medico the medico
      */
-    public void agregarMedico(Medico medico) {
+    public void agregarMedico(final Medico medico) {
         usuariosMedicos.add(medico);
     }
 
@@ -39,13 +34,15 @@ public class EliminarUsuariosMedicos {
      * @param apellido the apellido
      * @return the boolean
      */
-    public boolean eliminarMedico(String nombre, String apellido) {
+    public boolean eliminarMedico(final String nombre,
+                                  final String apellido) {
         Iterator<Medico> iterator = usuariosMedicos.iterator();
 
         while (iterator.hasNext()) {
             Medico medico = iterator.next();
 
-            if (medico.getNombre().equals(nombre) && medico.getApellido().equals(apellido)) {
+            if (medico.getNombre().equals(nombre)
+                    && medico.getApellido().equals(apellido)) {
                 iterator.remove();
                 return true;
             }

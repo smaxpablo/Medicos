@@ -1,8 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 /**
  * The type Usuario.
  *
@@ -20,7 +15,8 @@ public class Usuario {
      * @param password the password
      * @param email    the email
      */
-    public Usuario(String username, String password, String email) {
+    public Usuario(final String username, final String password,
+                   final String email) {
         this.username = username;
         this.password = password;
         this.email = email;
@@ -42,7 +38,7 @@ public class Usuario {
      *
      * @param username the username
      */
-    public void setUsername(String username) {
+    public void setUsername(final String username) {
         this.username = username;
     }
 
@@ -60,7 +56,7 @@ public class Usuario {
      *
      * @param password the password
      */
-    public void setPassword(String password) {
+    public void setPassword(final String password) {
         this.password = password;
     }
 
@@ -78,7 +74,7 @@ public class Usuario {
      *
      * @param email the email
      */
-    public void setEmail(String email) {
+    public void setEmail(final String email) {
         this.email = email;
     }
 }

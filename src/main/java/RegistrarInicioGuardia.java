@@ -4,11 +4,6 @@ import java.time.LocalTime;
 import java.util.HashMap;
 import java.util.Map;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 /**
  * The type Registrar inicio guardia.
  *
@@ -29,10 +24,12 @@ public class RegistrarInicioGuardia {
      *
      * @param medico the medico
      */
-    public void registrarInicio(Medico medico) {
+    public void registrarInicio(final Medico medico) {
         Guardia guardia = new Guardia(medico, LocalDate.now(), LocalTime.now());
         guardias.put(medico, guardia);
-        System.out.println("Se ha registrado el inicio de guardia para el médico: " + medico.getNombre());
+        System.out.println("Se ha registrado el inicio de guardia"
+                + " para el médico: "
+                + medico.getNombre());
     }
 
     /**

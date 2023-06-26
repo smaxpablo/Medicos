@@ -2,10 +2,6 @@
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
  * The type Guardia.
@@ -22,7 +18,7 @@ public class Guardia {
      *
      * @param medico the medico
      */
-    public void setMedico(Medico medico) {
+    public void setMedico(final Medico medico) {
         this.medico = medico;
     }
 
@@ -31,7 +27,7 @@ public class Guardia {
      *
      * @param fechaInicio the fecha inicio
      */
-    public void setFechaInicio(LocalDate fechaInicio) {
+    public void setFechaInicio(final LocalDate fechaInicio) {
         this.fechaInicio = fechaInicio;
     }
 
@@ -40,7 +36,7 @@ public class Guardia {
      *
      * @param horaInicio the hora inicio
      */
-    public void setHoraInicio(LocalTime horaInicio) {
+    public void setHoraInicio(final LocalTime horaInicio) {
         this.horaInicio = horaInicio;
     }
 
@@ -71,7 +67,8 @@ public class Guardia {
      * @param fechaInicio the fecha inicio
      * @param horaInicio  the hora inicio
      */
-    public Guardia(Medico medico, LocalDate fechaInicio, LocalTime horaInicio) {
+    public Guardia(final Medico medico, final LocalDate fechaInicio,
+                   final LocalTime horaInicio) {
         this.medico = medico;
         this.fechaInicio = fechaInicio;
         this.horaInicio = horaInicio;
@@ -109,8 +106,8 @@ public class Guardia {
      *
      * @param now the now
      */
-    void setFechaFin(LocalDate now) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    void setFechaFin(final LocalDate now) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     /**
@@ -118,7 +115,7 @@ public class Guardia {
      *
      * @param now the now
      */
-    void setHoraFin(LocalTime now) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    void setHoraFin(final LocalTime now) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 }

@@ -2,11 +2,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 /**
  * The type Buscar usuarios medicos.
  *
@@ -27,7 +22,7 @@ public class BuscarUsuariosMedicos {
      *
      * @param medico the medico
      */
-    public void agregarMedico(Medico medico) {
+    public void agregarMedico(final Medico medico) {
         usuariosMedicos.add(medico);
     }
 
@@ -37,7 +32,7 @@ public class BuscarUsuariosMedicos {
      * @param especialidad the especialidad
      * @return the list
      */
-    public List<Medico> buscarMedicoPorEspecialidad(String especialidad) {
+    public List<Medico> buscarMedicoPorEspecialidad(final String especialidad) {
         List<Medico> medicosEncontrados = new ArrayList<>();
 
         for (Medico medico : usuariosMedicos) {

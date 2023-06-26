@@ -3,10 +3,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
  * The type Planificacion guardias.
@@ -28,7 +24,7 @@ private List<Medico> medicos;
      *
      * @param medico the medico
      */
-    public void agregarMedico(Medico medico) {
+    public void agregarMedico(final Medico medico) {
         medicos.add(medico);
     }
 
@@ -37,7 +33,7 @@ private List<Medico> medicos;
      *
      * @param fecha the fecha
      */
-    public void planificarGuardia(LocalDate fecha) {
+    public void planificarGuardia(final LocalDate fecha) {
         for (Medico medico : medicos) {
             medico.agregarGuardia(fecha);
         }
@@ -49,7 +45,8 @@ private List<Medico> medicos;
     public void imprimirPlanificacion() {
         System.out.println("Planificación de Guardias:");
         for (Medico medico : medicos) {
-            System.out.println("Médico: " + medico.getNombre() + " " + medico.getApellido());
+            System.out.println("Médico: " + medico.getNombre() + " "
+                    + medico.getApellido());
             System.out.println("Guardias programadas:");
             for (LocalDate fecha : medico.getGuardias()) {
                 System.out.println(fecha);

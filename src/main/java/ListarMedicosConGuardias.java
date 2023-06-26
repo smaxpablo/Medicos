@@ -1,10 +1,6 @@
 
 import java.util.List;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
  * The type Listar medicos con guardias.
@@ -19,7 +15,7 @@ public class ListarMedicosConGuardias {
      *
      * @param medicos the medicos
      */
-    public ListarMedicosConGuardias(List<Medico> medicos) {
+    public ListarMedicosConGuardias(final List<Medico> medicos) {
         this.medicos = medicos;
     }
 
@@ -30,7 +26,8 @@ public class ListarMedicosConGuardias {
         System.out.println("Médicos con guardias asignadas:");
         for (Medico medico : medicos) {
             if (!medico.getGuardias().isEmpty()) {
-                System.out.println("- " + medico.getNombre() + " " + medico.getApellido());
+                System.out.println("- " + medico.getNombre() + " "
+                        + medico.getApellido());
             }
         }
     }

@@ -2,10 +2,6 @@
 import java.util.HashMap;
 import java.util.Map;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
  * The type Busqueda filtrada roles.
@@ -28,7 +24,8 @@ public class BusquedaFiltradaRoles {
      * @param usuario the usuario
      * @param rol     the rol
      */
-    public void asignarRol(String usuario, String rol) {
+    public void asignarRol(final String usuario,
+                           final String rol) {
         roles.put(usuario, rol);
     }
 
@@ -38,7 +35,7 @@ public class BusquedaFiltradaRoles {
      * @param filtro the filtro
      * @return the string
      */
-    public String buscarRol(String filtro) {
+    public String buscarRol(final String filtro) {
         for (Map.Entry<String, String> entry : roles.entrySet()) {
             String usuario = entry.getKey();
             String rol = entry.getValue();

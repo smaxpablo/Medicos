@@ -1,8 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 /**
  * The type Tarea.
  *
@@ -18,7 +13,7 @@ public class Tarea {
      * @param nombre    the nombre
      * @param prioridad the prioridad
      */
-    public Tarea(String nombre, Prioridad prioridad) {
+    public Tarea(final String nombre, final Prioridad prioridad) {
         this.nombre = nombre;
         this.prioridad = prioridad;
     }
@@ -28,7 +23,7 @@ public class Tarea {
      *
      * @param nombre the nombre
      */
-    public void setNombre(String nombre) {
+    public void setNombre(final String nombre) {
         this.nombre = nombre;
     }
 
@@ -37,7 +32,7 @@ public class Tarea {
      *
      * @param prioridad the prioridad
      */
-    public void setPrioridad(Prioridad prioridad) {
+    public void setPrioridad(final Prioridad prioridad) {
         this.prioridad = prioridad;
     }
 

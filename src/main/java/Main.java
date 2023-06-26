@@ -1,8 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 /**
  * The type Main.
  *
@@ -14,7 +9,7 @@ public class Main {
      *
      * @param args the input arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         BitacoraActividadesGuardia bitacora = new BitacoraActividadesGuardia();
 
         // Registrar actividades

@@ -2,10 +2,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
  * The type Crear usuarios medicos.
@@ -28,7 +24,8 @@ public class CrearUsuariosMedicos {
      * @param nombre       the nombre
      * @param especialidad the especialidad
      */
-    public void crearUsuarioMedico(String nombre, String especialidad) {
+    public void crearUsuarioMedico(final String nombre,
+                                   final String especialidad) {
         Medico medico = new Medico(nombre, especialidad);
         usuariosMedicos.add(medico);
     }

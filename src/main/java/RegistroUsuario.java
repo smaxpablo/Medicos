@@ -2,11 +2,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 /**
  * The type Registro usuario.
  *
@@ -28,7 +23,7 @@ public class RegistroUsuario {
      * @param usuario the usuario
      * @return the boolean
      */
-    public boolean registrarUsuario(Usuario usuario) {
+    public boolean registrarUsuario(final Usuario usuario) {
         // Verificar si el usuario ya está registrado
         if (existeUsuario(usuario.getUsername())) {
             return false;
@@ -45,7 +40,7 @@ public class RegistroUsuario {
      * @param username the username
      * @return the boolean
      */
-    public boolean existeUsuario(String username) {
+    public boolean existeUsuario(final String username) {
         for (Usuario usuario : usuarios) {
             if (usuario.getUsername().equals(username)) {
                 return true;

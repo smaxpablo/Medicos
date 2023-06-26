@@ -5,10 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
  * The type Listar planificacion guardias.
@@ -31,7 +27,8 @@ public class ListarPlanificacionGuardias {
      * @param medico the medico
      * @param fecha  the fecha
      */
-    public void agregarGuardia(Medico medico, LocalDate fecha) {
+    public void agregarGuardia(final Medico medico,
+                               final LocalDate fecha) {
         if (!planificacion.containsKey(medico)) {
             planificacion.put(medico, new ArrayList<>());
         }
@@ -43,10 +40,12 @@ public class ListarPlanificacionGuardias {
      */
     public void listarPlanificacionGuardias() {
         System.out.println("Planificación de guardias de médicos:");
-        for (Map.Entry<Medico, List<LocalDate>> entry : planificacion.entrySet()) {
+        for (Map.Entry<Medico, List<LocalDate>> entry
+                : planificacion.entrySet()) {
             Medico medico = entry.getKey();
             List<LocalDate> guardias = entry.getValue();
-            System.out.println("Médico: " + medico.getNombre() + " " + medico.getApellido());
+            System.out.println("Médico: " + medico.getNombre() + " "
+                    + medico.getApellido());
             System.out.println("Guardias programadas:");
             for (LocalDate fecha : guardias) {
                 System.out.println("- " + fecha);

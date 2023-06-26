@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
  * The type Medico.
@@ -32,7 +28,9 @@ public class Medico {
      * @param especialidad    the especialidad
      * @param fechaDisponible the fecha disponible
      */
-    public Medico(int numeroColegiado, String nombre, String apellido, String especialidad, LocalDate fechaDisponible) {
+    public Medico(final int numeroColegiado, final String nombre,
+                  final String apellido,
+                  final String especialidad, final LocalDate fechaDisponible) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.especialidad = especialidad;
@@ -47,8 +45,9 @@ public class Medico {
      * @param nombre       the nombre
      * @param especialidad the especialidad
      */
-    Medico(String nombre, String especialidad) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    Medico(final String nombre,
+           final String especialidad) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     /**
@@ -56,7 +55,7 @@ public class Medico {
      *
      * @param nombre the nombre
      */
-    public void setNombre(String nombre) {
+    public void setNombre(final String nombre) {
         this.nombre = nombre;
     }
 
@@ -65,7 +64,7 @@ public class Medico {
      *
      * @param apellido the apellido
      */
-    public void setApellido(String apellido) {
+    public void setApellido(final String apellido) {
         this.apellido = apellido;
     }
 
@@ -74,7 +73,7 @@ public class Medico {
      *
      * @param especialidad the especialidad
      */
-    public void setEspecialidad(String especialidad) {
+    public void setEspecialidad(final String especialidad) {
         this.especialidad = especialidad;
     }
 
@@ -83,7 +82,7 @@ public class Medico {
      *
      * @param guardias the guardias
      */
-    public void setGuardias(List<LocalDate> guardias) {
+    public void setGuardias(final List<LocalDate> guardias) {
         this.guardias = guardias;
     }
 
@@ -92,7 +91,7 @@ public class Medico {
      *
      * @param fechaDisponible the fecha disponible
      */
-    public void setFechaDisponible(LocalDate fechaDisponible) {
+    public void setFechaDisponible(final LocalDate fechaDisponible) {
         this.fechaDisponible = fechaDisponible;
     }
 
@@ -110,7 +109,7 @@ public class Medico {
      *
      * @param numeroColegiado the numero colegiado
      */
-    public void setNumeroColegiado(int numeroColegiado) {
+    public void setNumeroColegiado(final int numeroColegiado) {
         this.numeroColegiado = numeroColegiado;
     }
     private int numeroColegiado;
@@ -182,7 +181,7 @@ public class Medico {
      *
      * @param fecha the fecha
      */
-    public void agregarGuardia(LocalDate fecha) {
+    public void agregarGuardia(final LocalDate fecha) {
         guardias.add(fecha);
     }
 

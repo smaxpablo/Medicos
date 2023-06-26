@@ -4,7 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65db381e-9fcc-40d5-a61e-32e0248628ae" name="Changes" comment="" />
+    <list default="true" id="65db381e-9fcc-40d5-a61e-32e0248628ae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AccesoSistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AccesoSistema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ActualizarDatosUsuariosMedicos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ActualizarDatosUsuariosMedicos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AnularGuardiasMedico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AnularGuardiasMedico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AnularTareasAltaPrioridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AnularTareasAltaPrioridad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AsignacionRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AsignacionRoles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AsignarTareasAltaPrioridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AsignarTareasAltaPrioridad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BitacoraActividadesGuardia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BitacoraActividadesGuardia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BuscarMedicosTareasAltaPrioridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BuscarMedicosTareasAltaPrioridad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BuscarUsuariosMedicos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BuscarUsuariosMedicos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BusquedaFiltradaRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BusquedaFiltradaRoles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ConsultaMedicosDisponibles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConsultaMedicosDisponibles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ConsultarMedicosTareasAltaPrioridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConsultarMedicosTareasAltaPrioridad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CreacionRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CreacionRoles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrearUsuariosMedicos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrearUsuariosMedicos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DescargarReporteGuardiasMedicos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DescargarReporteGuardiasMedicos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EliminacionLogicaRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EliminacionLogicaRoles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EliminarUsuariosMedicos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EliminarUsuariosMedicos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GenerarReportesMedicos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GenerarReportesMedicos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Guardia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Guardia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ListadoMedicos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListadoMedicos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ListarGuardiasAsignadas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListarGuardiasAsignadas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ListarMedicosConGuardias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListarMedicosConGuardias.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ListarPlanificacionGuardias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListarPlanificacionGuardias.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ListarTareasAltaPrioridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListarTareasAltaPrioridad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ListarUsuariosMedicos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListarUsuariosMedicos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MantenimientoParametrosSistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MantenimientoParametrosSistema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Medico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Medico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ModificacionRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModificacionRoles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ModificarGuardiaMedico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModificarGuardiaMedico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ModificarTareasAltaPrioridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModificarTareasAltaPrioridad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PlanificacionGuardias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlanificacionGuardias.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RegistrarFinGuardia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RegistrarFinGuardia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RegistrarInicioGuardia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RegistrarInicioGuardia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RegistroMedico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RegistroMedico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RegistroUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RegistroUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ResetearContrasenaUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ResetearContrasenaUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tarea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Usuario.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,13 +69,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/dgallardo/Documents/Universidad/VERIFICACION DE SOFTWARE/PROYECTO/Proyecto 2/Medicos",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dgallardo/Documents/Universidad/VERIFICACION DE SOFTWARE/PROYECTO/Proyecto 2/Medicos&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

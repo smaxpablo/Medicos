@@ -2,10 +2,6 @@
 import java.util.HashMap;
 import java.util.Map;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
  * The type Eliminacion logica roles.
@@ -28,7 +24,8 @@ public class EliminacionLogicaRoles {
      * @param usuario the usuario
      * @param activo  the activo
      */
-    public void asignarRol(String usuario, boolean activo) {
+    public void asignarRol(final String usuario,
+                           final boolean activo) {
         rolesActivos.put(usuario, activo);
     }
 
@@ -38,7 +35,7 @@ public class EliminacionLogicaRoles {
      * @param usuario the usuario
      * @return the boolean
      */
-    public boolean eliminarRol(String usuario) {
+    public boolean eliminarRol(final String usuario) {
         if (rolesActivos.containsKey(usuario)) {
             rolesActivos.remove(usuario);
             return true;
@@ -52,7 +49,7 @@ public class EliminacionLogicaRoles {
      * @param usuario the usuario
      * @return the boolean
      */
-    public boolean obtenerRolActivo(String usuario) {
+    public boolean obtenerRolActivo(final String usuario) {
         return rolesActivos.getOrDefault(usuario, false);
     }
 }

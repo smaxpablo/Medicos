@@ -1,10 +1,6 @@
 
 import java.util.List;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
  * The type Modificar tareas alta prioridad.
@@ -19,7 +15,7 @@ public class ModificarTareasAltaPrioridad {
      *
      * @param tareas the tareas
      */
-    public ModificarTareasAltaPrioridad(List<Tarea> tareas) {
+    public ModificarTareasAltaPrioridad(final List<Tarea> tareas) {
         this.tareas = tareas;
     }
 
@@ -30,9 +26,11 @@ public class ModificarTareasAltaPrioridad {
      * @param nuevaPrioridad the nueva prioridad
      * @return the boolean
      */
-    public boolean modificarTarea(String nombre, Tarea.Prioridad nuevaPrioridad) {
+    public boolean modificarTarea(final String nombre,
+                                  final Tarea.Prioridad nuevaPrioridad) {
         for (Tarea tarea : tareas) {
-            if (tarea.getNombre().equals(nombre) && tarea.getPrioridad() == Tarea.Prioridad.ALTA) {
+            if (tarea.getNombre().equals(nombre)
+                    && tarea.getPrioridad() == Tarea.Prioridad.ALTA) {
                 tarea.setPrioridad(nuevaPrioridad);
                 return true;
             }

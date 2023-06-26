@@ -2,11 +2,6 @@
 import java.util.HashMap;
 import java.util.Map;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 /**
  * The type Modificacion roles.
  *
@@ -28,7 +23,8 @@ public class ModificacionRoles {
      * @param usuario the usuario
      * @param rol     the rol
      */
-    public void asignarRol(String usuario, String rol) {
+    public void asignarRol(final String usuario,
+                           final String rol) {
         asignaciones.put(usuario, rol);
     }
 
@@ -38,7 +34,8 @@ public class ModificacionRoles {
      * @param usuario  the usuario
      * @param nuevoRol the nuevo rol
      */
-    public void modificarRol(String usuario, String nuevoRol) {
+    public void modificarRol(final String usuario,
+                             final String nuevoRol) {
         asignaciones.put(usuario, nuevoRol);
     }
 
@@ -48,7 +45,7 @@ public class ModificacionRoles {
      * @param usuario the usuario
      * @return the string
      */
-    public String obtenerRol(String usuario) {
+    public String obtenerRol(final String usuario) {
         return asignaciones.get(usuario);
     }
 }

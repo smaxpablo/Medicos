@@ -8,16 +8,26 @@ import java.util.List;
  */
 
 /**
+ * The type Registro medico.
  *
  * @author pablo
  */
 public class RegistroMedico {
     private List<Medico> medicos;
 
+    /**
+     * Instantiates a new Registro medico.
+     */
     public RegistroMedico() {
         medicos = new ArrayList<>();
     }
 
+    /**
+     * Registrar medico boolean.
+     *
+     * @param medico the medico
+     * @return the boolean
+     */
     public boolean registrarMedico(Medico medico) {
         // Verificar si el médico ya está registrado
         if (existeMedico(medico.getNumeroColegiado())) {
@@ -29,6 +39,12 @@ public class RegistroMedico {
         return true;
     }
 
+    /**
+     * Existe medico boolean.
+     *
+     * @param numeroColegiado the numero colegiado
+     * @return the boolean
+     */
     public boolean existeMedico(int numeroColegiado) {
         for (Medico medico : medicos) {
             if (medico.getNumeroColegiado() == numeroColegiado) {

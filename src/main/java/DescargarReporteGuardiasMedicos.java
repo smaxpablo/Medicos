@@ -10,16 +10,25 @@ import java.util.List;
  */
 
 /**
+ * The type Descargar reporte guardias medicos.
  *
  * @author pablo
  */
 public class DescargarReporteGuardiasMedicos {
     private List<Medico> medicos;
 
+    /**
+     * Instantiates a new Descargar reporte guardias medicos.
+     *
+     * @param medicos the medicos
+     */
     public DescargarReporteGuardiasMedicos(List<Medico> medicos) {
         this.medicos = medicos;
     }
 
+    /**
+     * Descargar reporte.
+     */
     public void descargarReporte() {
         try (FileWriter writer = new FileWriter("reporte_guardias_medicos.txt")) {
             for (Medico medico : medicos) {

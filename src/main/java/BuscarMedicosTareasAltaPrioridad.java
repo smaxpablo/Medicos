@@ -8,16 +8,27 @@ import java.util.List;
  */
 
 /**
+ * The type Buscar medicos tareas alta prioridad.
  *
  * @author pablo
  */
 public class BuscarMedicosTareasAltaPrioridad {
     private List<Medico> medicos;
 
+    /**
+     * Instantiates a new Buscar medicos tareas alta prioridad.
+     *
+     * @param medicos the medicos
+     */
     public BuscarMedicosTareasAltaPrioridad(List<Medico> medicos) {
         this.medicos = medicos;
     }
 
+    /**
+     * Buscar medicos tareas alta prioridad list.
+     *
+     * @return the list
+     */
     public List<Medico> buscarMedicosTareasAltaPrioridad() {
         List<Medico> medicosPrioridad = new ArrayList<>();
 

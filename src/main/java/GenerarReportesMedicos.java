@@ -8,20 +8,32 @@ import java.util.List;
  */
 
 /**
+ * The type Generar reportes medicos.
  *
  * @author pablo
  */
 public class GenerarReportesMedicos {
     private List<Medico> usuariosMedicos;
 
+    /**
+     * Instantiates a new Generar reportes medicos.
+     */
     public GenerarReportesMedicos() {
         usuariosMedicos = new ArrayList<>();
     }
 
+    /**
+     * Agregar medico.
+     *
+     * @param medico the medico
+     */
     public void agregarMedico(Medico medico) {
         usuariosMedicos.add(medico);
     }
 
+    /**
+     * Generar reporte.
+     */
     public void generarReporte() {
         System.out.println("Reporte de Médicos:");
         for (Medico medico : usuariosMedicos) {

@@ -11,16 +11,26 @@ import java.util.Map;
  */
 
 /**
+ * The type Listar planificacion guardias.
  *
  * @author pablo
  */
 public class ListarPlanificacionGuardias {
     private Map<Medico, List<LocalDate>> planificacion;
 
+    /**
+     * Instantiates a new Listar planificacion guardias.
+     */
     public ListarPlanificacionGuardias() {
         planificacion = new HashMap<>();
     }
 
+    /**
+     * Agregar guardia.
+     *
+     * @param medico the medico
+     * @param fecha  the fecha
+     */
     public void agregarGuardia(Medico medico, LocalDate fecha) {
         if (!planificacion.containsKey(medico)) {
             planificacion.put(medico, new ArrayList<>());
@@ -28,6 +38,9 @@ public class ListarPlanificacionGuardias {
         planificacion.get(medico).add(fecha);
     }
 
+    /**
+     * Listar planificacion guardias.
+     */
     public void listarPlanificacionGuardias() {
         System.out.println("Planificación de guardias de médicos:");
         for (Map.Entry<Medico, List<LocalDate>> entry : planificacion.entrySet()) {

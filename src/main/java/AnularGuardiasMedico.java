@@ -10,16 +10,25 @@ import java.util.Map;
  */
 
 /**
+ * The type Anular guardias medico.
  *
  * @author pablo
  */
 public class AnularGuardiasMedico {
 private Map<Medico, List<LocalDate>> planificacion;
 
+    /**
+     * Instantiates a new Anular guardias medico.
+     */
     public AnularGuardiasMedico() {
         planificacion = new HashMap<>();
     }
 
+    /**
+     * Anular guardias.
+     *
+     * @param medico the medico
+     */
     public void anularGuardias(Medico medico) {
         if (planificacion.containsKey(medico)) {
             planificacion.remove(medico);

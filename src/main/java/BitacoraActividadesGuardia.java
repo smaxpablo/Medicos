@@ -8,20 +8,32 @@ import java.util.List;
  */
 
 /**
+ * The type Bitacora actividades guardia.
  *
  * @author pablo
  */
 public class BitacoraActividadesGuardia {
     private List<String> actividades;
 
+    /**
+     * Instantiates a new Bitacora actividades guardia.
+     */
     public BitacoraActividadesGuardia() {
         actividades = new ArrayList<>();
     }
 
+    /**
+     * Registrar actividad.
+     *
+     * @param actividad the actividad
+     */
     public void registrarActividad(String actividad) {
         actividades.add(actividad);
     }
 
+    /**
+     * Mostrar bitacora.
+     */
     public void mostrarBitacora() {
         System.out.println("Bitácora de Actividades de Guardia:");
 

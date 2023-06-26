@@ -8,16 +8,28 @@ import java.util.List;
  */
 
 /**
+ * The type Anular tareas alta prioridad.
  *
  * @author pablo
  */
 public class AnularTareasAltaPrioridad {
     private List<Tarea> tareas;
 
+    /**
+     * Instantiates a new Anular tareas alta prioridad.
+     *
+     * @param tareas the tareas
+     */
     public AnularTareasAltaPrioridad(List<Tarea> tareas) {
         this.tareas = tareas;
     }
 
+    /**
+     * Anular tarea boolean.
+     *
+     * @param nombre the nombre
+     * @return the boolean
+     */
     public boolean anularTarea(String nombre) {
         Iterator<Tarea> iterator = tareas.iterator();
 

@@ -10,16 +10,27 @@ import java.util.Map;
  */
 
 /**
+ * The type Modificar guardia medico.
  *
  * @author pablo
  */
 public class ModificarGuardiaMedico {
 private Map<Medico, List<LocalDate>> planificacion;
 
+    /**
+     * Instantiates a new Modificar guardia medico.
+     */
     public ModificarGuardiaMedico() {
         planificacion = new HashMap<>();
     }
 
+    /**
+     * Modificar guardia.
+     *
+     * @param medico         the medico
+     * @param fechaExistente the fecha existente
+     * @param nuevaFecha     the nueva fecha
+     */
     public void modificarGuardia(Medico medico, LocalDate fechaExistente, LocalDate nuevaFecha) {
         if (planificacion.containsKey(medico)) {
             List<LocalDate> guardias = planificacion.get(medico);

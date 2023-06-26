@@ -10,16 +10,25 @@ import java.util.Map;
  */
 
 /**
+ * The type Registrar fin guardia.
  *
  * @author pablo
  */
 public class RegistrarFinGuardia {
     private Map<Medico, Guardia> guardias;
 
+    /**
+     * Instantiates a new Registrar fin guardia.
+     */
     public RegistrarFinGuardia() {
         guardias = new HashMap<>();
     }
 
+    /**
+     * Registrar fin.
+     *
+     * @param medico the medico
+     */
     public void registrarFin(Medico medico) {
         if (guardias.containsKey(medico)) {
             Guardia guardia = guardias.get(medico);
@@ -31,6 +40,11 @@ public class RegistrarFinGuardia {
         }
     }
 
+    /**
+     * Gets guardias.
+     *
+     * @return the guardias
+     */
     public Map<Medico, Guardia> getGuardias() {
         return guardias;
     }

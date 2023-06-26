@@ -8,20 +8,36 @@ import java.util.Map;
  */
 
 /**
+ * The type Busqueda filtrada roles.
  *
  * @author pablo
  */
 public class BusquedaFiltradaRoles {
     private Map<String, String> roles;
 
+    /**
+     * Instantiates a new Busqueda filtrada roles.
+     */
     public BusquedaFiltradaRoles() {
         roles = new HashMap<>();
     }
 
+    /**
+     * Asignar rol.
+     *
+     * @param usuario the usuario
+     * @param rol     the rol
+     */
     public void asignarRol(String usuario, String rol) {
         roles.put(usuario, rol);
     }
 
+    /**
+     * Buscar rol string.
+     *
+     * @param filtro the filtro
+     * @return the string
+     */
     public String buscarRol(String filtro) {
         for (Map.Entry<String, String> entry : roles.entrySet()) {
             String usuario = entry.getKey();

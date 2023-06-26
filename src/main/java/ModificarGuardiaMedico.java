@@ -4,23 +4,32 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
+ * The type Modificar guardia medico.
  *
  * @author pablo
  */
 public class ModificarGuardiaMedico {
 private Map<Medico, List<LocalDate>> planificacion;
 
+    /**
+     * Instantiates a new Modificar guardia medico.
+     */
     public ModificarGuardiaMedico() {
         planificacion = new HashMap<>();
     }
 
-    public void modificarGuardia(Medico medico, LocalDate fechaExistente, LocalDate nuevaFecha) {
+    /**
+     * Modificar guardia.
+     *
+     * @param medico         the medico
+     * @param fechaExistente the fecha existente
+     * @param nuevaFecha     the nueva fecha
+     */
+    public void modificarGuardia(final Medico medico,
+                                 final LocalDate fechaExistente,
+                                 final LocalDate nuevaFecha) {
         if (planificacion.containsKey(medico)) {
             List<LocalDate> guardias = planificacion.get(medico);
             if (guardias.contains(fechaExistente)) {
@@ -28,10 +37,12 @@ private Map<Medico, List<LocalDate>> planificacion;
                 guardias.add(nuevaFecha);
                 System.out.println("Guardia modificada exitosamente.");
             } else {
-                System.out.println("La fecha existente no se encontró en la planificación del médico.");
+                System.out.println("La fecha existente no se encontró en la "
+                        + "planificación del médico.");
             }
         } else {
-            System.out.println("El médico no tiene una planificación de guardias.");
+            System.out.println("El médico no tiene una planificación "
+                    + "de guardias.");
         }
     }
 }

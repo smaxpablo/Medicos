@@ -1,22 +1,26 @@
 
 import java.util.Map;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 /**
+ * The type Listar guardias asignadas.
  *
  * @author pablo
  */
 public class ListarGuardiasAsignadas {
     private Map<Medico, Guardia> guardias;
 
-    public ListarGuardiasAsignadas(Map<Medico, Guardia> guardias) {
+    /**
+     * Instantiates a new Listar guardias asignadas.
+     *
+     * @param guardias the guardias
+     */
+    public ListarGuardiasAsignadas(final Map<Medico, Guardia> guardias) {
         this.guardias = guardias;
     }
 
+    /**
+     * Listar guardias.
+     */
     public void listarGuardias() {
         System.out.println("Lista de Guardias Asignadas:");
 

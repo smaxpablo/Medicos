@@ -2,26 +2,34 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
+ * The type Bitacora actividades guardia.
  *
  * @author pablo
  */
 public class BitacoraActividadesGuardia {
     private List<String> actividades;
 
+    /**
+     * Instantiates a new Bitacora actividades guardia.
+     */
     public BitacoraActividadesGuardia() {
         actividades = new ArrayList<>();
     }
 
-    public void registrarActividad(String actividad) {
+    /**
+     * Registrar actividad.
+     *
+     * @param actividad the actividad
+     */
+    public void registrarActividad(final String actividad) {
         actividades.add(actividad);
     }
 
+    /**
+     * Mostrar bitacora.
+     */
     public void mostrarBitacora() {
         System.out.println("Bitácora de Actividades de Guardia:");
 
